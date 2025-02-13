@@ -1,0 +1,29 @@
+/* This is a comment in CSS */
+
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+  }
+header, footer {
+    background-color: #a7c7e7;
+}  
+.site-title {
+    color: aqua;
+}
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+ul {
+    list-style-type: square;
+  }
+  ul li:nth-child(odd) {
+    background-color:gray;
+  }
+  nav a {
+    text-decoration: none;
+    background-color:blanchedalmond;
+    border: 2px solid #3498db;
+  }
+  nav a:hover, nav a:focus {
+    background-color: #2980b9;
+  }
