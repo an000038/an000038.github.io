@@ -1,0 +1,80 @@
+body {
+    background-color: #51b4ada1;
+  }
+.body-div{
+    position: relative;
+    background-color: rgb(172, 237, 238);
+    margin: 0px 200px;
+    padding: 0px 10px;
+    padding-bottom: 80px;
+    padding-top: 0;
+    top: 0;
+}
+#starfish2{
+    float: left;
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+header h1{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 190px;
+    left: 380px;
+}
+header img{
+    width: 100%;
+    height: auto;
+}
+
+nav ul{
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 100px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.bar{
+    display:inline-block
+}
+
+
+form{
+    width: 100%;
+}
+
+
+.text-input label{
+    font-weight: bold;
+    display: block;
+}
+
+.text-input input,
+.text-input textarea {
+    width: 100%;
+}
+
+
+.radio-group label{
+    left: 0;
+    display: inline-block;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
