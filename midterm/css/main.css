@@ -36,9 +36,12 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin: 0 100px;
-
+    border-right: 1px solid;
+    padding-right: 50px;
 }
-
+nav li:last-child{
+    border-right: none;
+}
 nav ul li a{
     text-decoration: none;
     color: black;
