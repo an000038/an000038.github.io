@@ -1,0 +1,614 @@
+/* main.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: #1e1e1e;
+  color: rgb(0, 0, 0);
+  flex-wrap: nowrap;
+}
+
+header .logo {
+  height: 40px;
+}
+
+.Navigator {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.Navigator a {
+  color: rgb(203, 154, 49);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.Navigator a:hover {
+  background-color: #d6a100;
+  color: #1e1e1e;
+}
+
+/*Search input area*/
+.search_form {
+  display: flex;
+  border: 1px solid #d6a100;
+  overflow: hidden;
+  border-radius: 2px;
+  height: 36px;
+}
+
+.search_form input[type="search"] {
+  border: none;
+  padding: 0 0.75rem;
+  font-size: 1rem;
+  outline: none;
+  width: 200px;
+}
+
+.search_form button {
+  background-color: transparent;
+  color: #d6a100;
+  border: none;
+  padding: 0 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.search_form button:hover {
+  background-color: #e6c200;
+}
+
+/* Banner */
+.Title_img {
+  position: relative;
+  height: 450px;
+}
+
+.banner_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     
+  width: 87%;         
+  min-width: 280px;              
+  height: auto;                 
+  box-sizing: border-box;
+  z-index: 2;
+  border-radius: 0.25rem;
+}
+
+.banner_text h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.banner_text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.banner_text .button {
+  background-color: #eea700;
+  color: black;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner_text .button:hover {
+  background-color: black;
+  color: #e3a600;
+}
+
+/* About Section */
+.About_us {
+  background-color: #ffe9b0;
+  padding: 2rem;
+}
+
+.about_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.about_text h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;  
+  line-height: 1.2;
+  color: #000;     
+}
+
+.about_image {
+  flex: 1 1 50%;
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.about_text {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Services Section */
+.Our_services {
+  padding: 2rem 6rem; 
+  background-color: white;
+}
+
+.Our_services h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+
+.service_box:nth-child(1),
+.service_box:nth-child(2) {
+  grid-column: span 3;
+}
+
+.service_box:nth-child(3),
+.service_box:nth-child(4),
+.service_box:nth-child(5) {
+  grid-column: span 2;
+}
+
+.service_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffdf8e;
+  border: 1px solid #ccc;
+  text-align: left;
+  overflow: hidden;
+  height: 100%;
+}
+
+.service_box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service_box .service_content {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.service_box h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+  min-height: 3em;
+  font-weight: 700;
+}
+
+.service_box p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.service_box .btn {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  margin: 1rem;
+  display: inline-block;
+
+}
+
+.service_box .btn::after {
+  content: "▶";
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: auto;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+/* Vision Section */
+.Our_vision {
+  background: url('../images/vision.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 2rem 6rem;
+  text-align: left;
+}
+
+.Our_vision .btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px#ccc solid;
+  margin-top: 1rem;
+}
+
+/* Team Section */
+.Team {
+  padding: 2rem 6rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.Team h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.teams {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffe9b0;
+    align-items: stretch;
+    gap: 0;
+    height: 350px;
+}
+
+.teams.reverse {
+  flex-direction: row-reverse;
+}
+
+.teams img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.team_text {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.team_text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.team_text .job_position {
+  font-weight: bold;
+  border-bottom: 2px solid #b76b00; 
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem; 
+  width: 100%;
+}
+
+/* Contact Section */
+.Contact {
+  background-color: #fff;
+  padding: 2rem 6rem;
+}
+
+.contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.Form,
+.Map {
+  flex: 1 1 400px;
+}
+
+.Map iframe{
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+.Form input,
+.Form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.Form button {
+  background-color: #1e1e1e;
+  font-size: larger;
+  font-weight: 700;
+  color: rgb(236, 153, 0);
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.Form {
+  flex: 1 1 400px;
+}
+
+.Map {
+  flex: 1 1 400px;
+}
+
+.hours_of_operation {
+  flex: 1 1 100%;
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #ffe9b0;
+}
+
+/* Footer */
+footer {
+  text-align: left;
+  background-color: #1e1e1e;
+  color: rgb(255, 136, 0);
+  padding: 1rem 6rem;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logo{
+    align-self: flex-start;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .Navigator {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;              
+  }
+
+  .Navigator a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .search_form {
+    flex-direction: row;         
+    justify-content: center;    
+    width: 90%;             
+    margin: 1rem auto 0;
+  }
+
+  .search_form input[type="search"] {
+    flex: 1;                   
+    min-width: 0;              
+  }
+  
+  .search_form button {
+    flex: 0 0 auto;            
+    padding: 0 1rem;
+    white-space: nowrap;
+  }
+
+  .banner_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    color: white;
+    padding: 2rem;
+    text-align: left;
+    width: 100%;           
+    max-width: none;        
+    box-sizing: border-box;
+    z-index: 2;
+    border-radius: 0.25rem;
+  }
+  
+  .banner_text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .banner_text p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .banner_text .button {
+    background-color: #ffd700;
+    color: black;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .banner_text .button:hover {
+    background-color: black;
+    color: #ffd700;
+  }
+
+  .about_container {
+    flex-direction: column;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .about_image,
+  .about_text {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .about_text {
+    padding: 1rem;
+  }
+
+  .Our_services {
+    padding: 2rem 1.5rem; 
+  }
+
+
+  .services_container {
+    grid-template-columns: 1fr;
+  }
+  
+  .service_box {
+    grid-column: auto !important;
+  }
+
+  .service_box .btn{
+    bottom: 1rem;
+    left: 1rem;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    display: inline-flex;
+   align-items: center;
+    gap: 0.5rem;
+  }
+
+  .Our_vision{
+    padding: 2rem 1.5rem;
+  }
+
+  .Team{
+    padding: 2rem 1.5rem;
+  }
+
+  .teams {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .teams.reverse {
+    flex-direction: column; 
+  }
+
+  .teams img,
+  .team_text {
+    width: 100%;
+  }
+
+  .team_text {
+    padding: 1.5rem;
+  }
+
+  .Contact{
+    padding: 2rem 1.5rem;
+  } 
+
+
+  .contact_container {
+    flex-direction: column;
+  }
+
+
+
+  .Form {
+    order: 1;
+  }
+  
+  .hours_of_operation {
+    order: 2;
+  }
+  
+  .Map {
+    order: 3;
+  }
+  
+  footer{
+    padding: 1rem 1.5rem;
+  }
+}
